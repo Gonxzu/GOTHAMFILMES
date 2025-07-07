@@ -1,0 +1,28 @@
+.cima {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1px; /* espaçamento entre os itens */
+}
+
+
+.imagem1 {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+.imagem2 img {
+    width: 50%;
+    display: block;
+    margin: 20px auto; 
+}
+
+ .botao-DSETA {
+      display: block;
+      text-align: center;
+      font-size: 50px;
+      color: black;
+      text-decoration: none; 
+      margin: 20px auto; 
+    }

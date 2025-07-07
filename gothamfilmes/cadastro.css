@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: #f9f9f9;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  border-bottom: 2px solid #ccc;
+  background-color: white;
+}
+
+.navbar-esquerda {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.brand-name {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.navbar-direita {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: monospace;
+  font-size: 16px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+.titulo-filmes {
+  text-align: center;
+  margin: 70px 0 50px; 
+  font-size: 24px;
+}
+
+.destaque {
+  color: #4B00FF;
+  font-weight: bold;
+}
+
+.filmes-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px; 
+  padding-bottom: 60px;
+}
+
+.filme {
+  text-align: center;
+  width: 300px; 
+  font-size: 18px; 
+}
+
+.filme img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+}
+
+.filme p {
+  margin: 10px 0 6px;
+  font-family: monospace;
+  font-size: 16px; 
+}
+
+.filme i {
+  margin-right: 4px;
+}
+
+.estrelas {
+  color: black;
+  font-size: 20px; 
+}

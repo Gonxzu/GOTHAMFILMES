@@ -1,0 +1,6 @@
+.imagem {
+    display: flex;
+    width: 350px;
+    height: 290px;
+    border-radius: 20px;
+}

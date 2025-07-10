@@ -79,3 +79,30 @@ main {
   font-weight: bold;
   cursor: pointer;
 }
+.edit-stats {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-top: 10px;
+}
+
+.stats {
+  display: flex;
+  gap: 40px;
+}
+
+.stats div {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.stats strong {
+  display: block;
+  font-size: 1.6rem;
+  color: #111;
+}
+
+.stats span {
+  font-size: 1rem;
+  color: #666;
+}

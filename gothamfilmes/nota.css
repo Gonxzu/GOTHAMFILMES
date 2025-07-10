@@ -1,0 +1,131 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1b1e24;
+      color: #000000;
+      min-height: 100vh;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      background-color: #111418;
+      border-bottom: 1px solid #2c3440;
+    }
+
+    .navbar .logo {
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .logo span {
+      color: #00ff88;
+      margin-left: 8px;
+    }
+
+    .navbar .menu a {
+      color: #dfe6ee;
+      text-decoration: none;
+      margin: 0 12px;
+      font-size: 15px;
+    }
+
+    .navbar .menu a:hover {
+      color: #00ff88;
+    }
+
+    /* Layout principal */
+    .container {
+      display: flex;
+      padding: 40px;
+      justify-content: center;
+      gap: 60px;
+    }
+
+    .poster-section {
+      text-align: center;
+    }
+
+    .poster {
+      width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    }
+
+    .title {
+      font-size: 26px;
+      font-weight: bold;
+      margin: 15px 0 5px;
+    }
+
+    .subtitle {
+      color: #999;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  border-bottom: 2px solid #ccc;
+  background-color: white;
+}
+
+    .navbar-esquerda {
+    display: flex;
+    align-items: center;
+    }
+
+    .logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    }
+
+    .brand-name {
+    font-size: 22px;
+    font-weight: bold;
+    }
+
+    .navbar-direita {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: monospace;
+    font-size: 16px;
+    }
+
+    .navbar a {
+    text-decoration: none;
+    color: black;
+    }
+
+    .rating {
+      margin: 20px 0;
+      text-align: center;
+      border-top: 1px solid #425166;
+      padding-top: 15px;
+    }
+
+    .stars {
+      font-size: 26px;
+      cursor: pointer;
+      color: #47586b;
+    }
+
+    .stars .full {
+      color: #00ff88;
+    }

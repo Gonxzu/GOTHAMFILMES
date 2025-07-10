@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Superman (2025)</title>
+  <link rel="stylesheet" href="nota.css" />
+
+</head>
+<body>
+
+    <nav class="navbar">
+    <div class="navbar-esquerda">
+      <img src="img/gotham.jpeg" alt="Logo" class="logo">
+      <span class="brand-name">Gotham Exce</span>
+    </div>
+    <div class="navbar-direita">
+      <i class="fas fa-search"></i>
+      <a href="/gothamfilmes/filmes.html">Films</a>
+      <a href="/gothamfilmes/account.html">account</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="poster-section">
+      <img src="/gothamfilmes/img/superman.jpeg" alt="Poster Superman" class="poster">
+      <div class="title">Superman <span style="font-weight: normal; color: #888;">2025</span></div>
+      <div class="subtitle">Um filme de James Gunn</div>
+    </div>
+
+    <div class="sidebar">
+      <button><span class="icon">👁️</span>Watched</button>
+      <button><span class="icon">🤍</span>Like</button>
+      <button><span class="icon">🕒</span>Watchlist</button>
+
+      <div class="rating">
+        <div>Rated</div>
+        <div class="stars" id="rating">
+        </div>
+  </div>
+
+
+  <script>
+    const estrela = document.getElementById('rating');
+    let rating = 0;
+
+    function renderStars() {
+      estrela.innerHTML = '';
+      for (let i = 1; i <= 6; i++) {
+        const span = document.createElement('span');
+        if (i <= Math.floor(rating)) {
+          span.textContent = '★';
+          span.className = 'full';
+        } else {
+          span.textContent = '★';
+          span.className = '';
+        }
+        span.dataset.value = i;
+        span.addEventListener('click', () => {
+          rating = i === rating ? i - 0.5 : i;
+          renderStars();
+        });
+        estrela.appendChild(span);
+      }
+    }
+
+    renderStars();
+  </script>
+</body>
+</html>

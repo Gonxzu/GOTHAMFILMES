@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Films</title>
-  <link rel="stylesheet" href="filmes.css">
+  <link rel="stylesheet" href="css/filmes.css">
 </head>
 <body>
 
@@ -13,13 +13,16 @@
   </header>
 
   <main>
+    <section id="cardFilms">
+      
+    </section>
     <section>
       <h2>FILMES POPULARES ESSA SEMANA</h2>
       <div class="galeria">
         <a href="nota.html"><img src="img/bailarinha.jpeg" alt="Ballerina"></a>
         <a href="nota.html"><img src="img/htyyd.jpg" alt="Como Treinar seu Dragão"></a>
         <a href="nota.html"><img src="img/before.jpg" alt="Before Sunrise"></a>
-        <a href="nota.html"><img src="img/superman.jpeg" alt="Superman"></a>
+        <a href="nota.html" id="aSuperman" value="0" ><img src="img/superman.jpeg" alt="Superman"></a>
       </div>
     </section>
 
@@ -35,4 +38,6 @@
   </main>
 
 </body>
+<script type="module" src="js/filmes.js"></script>
+
 </html>

@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>Superman (2025)</title>
   <link rel="stylesheet" href="nota.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 
 </head>
 <body>
@@ -28,12 +30,27 @@
     </div>
 
     <div class="sidebar">
-      <button><span class="icon">👁️</span>Watched</button>
-      <button><span class="icon">🤍</span>Like</button>
-      <button><span class="icon">🕒</span>Watchlist</button>
+
+      <button id="coracaoEmoji" style="font-size:2rem; border:none; background:none; cursor:pointer;">
+
+        <i class="fa-solid fa-heart"></i>
+
+      </button>
+
+      <button id="relogio" style="font-size:2rem; border:none; background:none; cursor:pointer;"></i>
+
+        <i class="fa-regular fa-clock"></i>
+        
+      </button>
+
+      <button id="olho" style="font-size:2rem; border:none; background:none; cursor:pointer;">
+
+        <i class="fa-regular fa-eye"></i>
+
+      </button>
 
       <div class="rating">
-        <div>Rated</div>
+        <div class="rated">Rated</div>
         <div class="stars" id="rating">
         </div>
   </div>
@@ -64,6 +81,27 @@
     }
 
     renderStars();
+
+
+<!--                                                            -->
+
+    const botao1 = document.getElementById('coracaoEmoji');
+    const botao2 = document.getElementById('relogio');
+    const botao3 = document.getElementById('olho');
+
+    botao1.addEventListener("click", function(){
+      botao1.classList.toggle("ativo")
+    });
+
+    botao2.addEventListener("click", function(){
+      botao2.classList.toggle("a")
+    });
+
+    botao3.addEventListener("click", function(){
+      botao3.classList.toggle("a")
+    });
+
+
   </script>
 </body>
 </html>

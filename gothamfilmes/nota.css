@@ -129,3 +129,14 @@
     .stars .full {
       color: #00ff88;
     }
+
+    #coracaoEmoji.ativo  {
+      color: red;
+    }
+    #relogio.a {
+      color: green;
+    }
+
+    #olho.a {
+      color: white;
+    }
